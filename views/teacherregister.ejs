@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url('https://cdn.glitch.global/3c22ae8b-fb74-4296-a319-f74530317056/pexels-andrea-piacquadio-3772511.jpg?v=1697114874011');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            color: black; /* Set text color to black */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .registration-form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .registration-form h3 {
+            text-align: center;
+        }
+
+        .registration-form table {
+            width: 100%;
+        }
+
+        .registration-form input[type="text"],
+        .registration-form input[type="password"],
+        .registration-form input[type="number"],
+        .registration-form input[type="radio"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        /* Add hover effect to input boxes */
+        .registration-form input[type="text"]:hover,
+        .registration-form input[type="password"]:hover,
+        .registration-form input[type="number"]:hover,
+        .registration-form input[type="radio"]:hover {
+            border-color: #007BFF; /* Change border color on hover */
+            box-shadow: 0 0 15px rgba(0, 123, 255, 0.4); /* Add box-shadow on hover */
+        }
+
+        .registration-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .registration-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="registration-form">
+            <form action="/teacherregistr" method="GET">
+                <h3>TEACHER REGISTRATION FORM</h3>
+                <table cellpadding="10">
+                    <!-- First Name -->
+                    <tr>
+                        <td><b>FIRST NAME</b></td>
+                        <td><input type="text" name="First_Name" required minlength="4" maxlength="30" /></td>
+                    </tr>
+                    <!-- Last Name -->
+                    <tr>
+                        <td><b>LAST NAME</b></td>
+                        <td><input type="text" name="Last_Name" required minlength="1" maxlength="30" /></td>
+                    </tr>
+                    <!-- YOUR Id -->
+                    <tr>
+                        <td><b>YOUR Id</b></td>
+                        <td><input type="text" name="RegId" required maxlength="11" /></td>
+                    </tr>
+                    <!-- Email Id -->
+                    <tr>
+                        <td><b>EMAIL ID</b></td>
+                        <td><input type="text" name="Email_Id" required minlength="4" maxlength="100" /></td>
+                    </tr>
+                    <!-- Mobile Number -->
+                    <tr>
+                        <td><b>MOBILE NUMBER</b></td>
+                        <td><input type="text" name="Mobile_Number" required minlength="10" maxlength="10" /></td>
+                    </tr>
+                    <!-- GENDER -->
+                    <tr>
+                        <td><b>GENDER</b></td>
+                        <td>
+                            <label><input type="radio" name="Gender" value="Male" /> Male</label>
+                            <label><input type="radio" name="Gender" value="Female" /> Female</label>
+                        </td>
+                    </tr>
+                    <!-- BRANCH NAME -->
+                    <tr>
+                        <td><b>BRANCH NAME</b></td>
+                        <td><input type="text" name="branch" required minlength="3" maxlength="3" /></td>
+                    </tr>
+                    <!-- DESIGNATION -->
+                    <tr>
+                        <td><b>DESIGNATION in DEPARTMENT</b></td>
+                        <td><input type="text" name="Designation" required minlength="2" /></td>
+                    </tr>
+                    <!-- NUMBER OF YEARS TAKEN -->
+                    <tr>
+                        <td><b>NUMBER OF YEARS TAKEN</b></td>
+                        <td><input type="number" name="YearsTaken" required min="1" max="9" /></td>
+                    </tr>
+                    <!-- YEARS OF EXPERIENCE -->
+                    <tr>
+                        <td><b>YEARS OF EXPERIENCE</b></td>
+                        <td><input type="number" name="YearsExperience" required min="1" max="99" /></td>
+                    </tr>
+                    <!-- QUALIFICATIONS -->
+                    <tr>
+                        <td><b>QUALIFICATIONS</b></td>
+                        <td><input type="text" name="Qualifications" required minlength="2" /></td>
+                    </tr>
+                    <!-- SALARY -->
+                    <tr>
+                        <td><b>SALARY</b></td>
+                        <td><input type="number" name="Salary" required min="1" /></td>
+                    </tr>
+                    <!-- Submit Button -->
+                    <tr>
+                        <td colspan="2" align="center">
+                            <b><input type="submit" class="btn btn-primary" value="Submit"></b>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

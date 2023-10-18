@@ -1,0 +1,8 @@
+.cards-wrapper{
+    display: flex;
+    background-color: darkgray
+};
+.card{
+    margin-left: 1.0em;
+    margin-right: 1.0em;
+}

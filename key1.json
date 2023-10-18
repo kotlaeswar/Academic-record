@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "projectcollege863",
+  "private_key_id": "88fc5134aaab91f374517095eb2007b1cebd0ae3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDdtz0ma7aGPOLa\nRN1xqzpupEQw/kreb2nRYfavGo8ZYTn9/G5eNOfSKZke25/n97umlw5GNnf3QajG\nib+wSeEPpMDvxUb4Vj5XBS+Xy7rHs0kbD7LtFbrEBAqGP9E/G0+B8Htvatakrcik\ntXGn+fX8z3X5gU/w4GwNab2GhtomjILsLOgwG6zg+uk1tr7MEQMUewfW54P3cdRW\nFMF+Ohe4LoaseqhsQg3ov5TXByOzYzy0AIAajKaF5VW+kB6yA51nLVeAw6mQ+icq\nSiJZCG9ziSo3dnq77bP+Wq4hHAAL3i8UyXRVgzVJAW8Zd00j8Tbbhtli+GcmcL4E\noRco78lrAgMBAAECggEAD0A3eJkYKQuvHwx1nwgEMPAjsKsNQ1euk7SFX24YQcqq\nToo6nUhOWep6meDJkw87XS4u0S2V+vANR/rZsKqkTIssqlGLnDFygFHfADYHVw1C\nDhZ6XEyOWEVe4/Un04txYKLGGtfig9lgX9QLSV6sSQOMPeljMlJ9nD6Vxtcn0lbf\nMNd0xt7DOwHd7RRBc6AcedC0OVGhAWdehvGgPTwNzOCM7vkZ/j4mSw7QxdSwK1Ct\n9EkHsnhYLWKj5twv5vm2Nr+JT4efox3AGwvbB7ZsLiBIHAtDM/NUoh3KoKX0ZRBb\nn2/jL5yRGty0I44kl4AqupwGISSqTzdqgbpySRvJ4QKBgQD04K+URnfftauAs5eA\n6mGLf3dt5RF50dSB2acK1GgGz9nVLM/NrvO7O2FUcnSqd9lK5extvRyPKmSoAFK7\ngQZgiqAp43Ui8r/CETc4CC4BZ0+82/C1PEU5HHt3y3WgAgJBoMGPbdqGR29+Kqb1\nMCxbM9quSQx9JOP2cZTCgvcqNwKBgQDnyTzzsgOKSTtdqjQ5Hj8FcUjETqLMaqW7\nElcLdKaB+epIlOdy9+cqZx2F3VV7uyZhSB3XG1WXX25u9sunnJFF6+X9vQ4P46hh\naxPu4iXZr79R2ok4tZOMhJodqePfwOaQj1EdfoBv4/AJ56R+s6tKWOv0vubypQBN\nTUIqMjuwbQKBgCaWLTSpMgR/ZQn/wrTeugY4TMJ1YR6YEOtxN6A+PjIsmH+98vTP\nR7rOLZUYAAhIoGXr+yiDrzdkD75lZqQDPdUCoyBWpkOeitbyzYe3ykAQXoE9Cx4T\n5DiOo2oKFnvjNSXQRg/q2I9mPExePjbOo36vmhryidRCduWDmlRYPMhbAoGBAJAG\noMRA4ihElwn9oBO58qkcGn446rogrrjOjZ4Frw1m0KinNiZfWpojltm+jcajpRaf\n7ELkrkuwNfvniOauyCptie0gU6OV7+QQ2EMA7UoWBckEBW5ijbusDePO1FUOFXbQ\nRzQPjhl4xogxEyrT0+UP2harpPAzjTt7fVig/CwFAoGBAIfKTKjnd19qynm6kKjd\nSukG1/cmuldworoRoXITO+/ki42HJTPHId5oX+83+lzHELz/u6JFGRn+XmSvzxZm\nwxMgvBPIXliKvewKINojAYrxUrQvFbkAQCvpyetz6kOedwG1v6T7LkBys/leyS/6\nXWS9DF3bk6ZUQSGl/NGJ5kkH\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-kqcam@projectcollege863.iam.gserviceaccount.com",
+  "client_id": "108267916100763923220",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-kqcam%40projectcollege863.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

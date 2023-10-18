@@ -1,0 +1,71 @@
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Student List</title>
+          <style>
+              body {
+                  background-color: #f0f0f0;
+                  font-family: Arial, sans-serif;
+              }
+
+              form {
+                  max-width: 600px;
+                  margin: 0 auto;
+                  padding: 20px;
+                  background-color: #fff;
+                  border-radius: 10px;
+                  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+              }
+
+              h3 {
+                  text-align: center;
+                  color: #007BFF;
+                  font-size: 24px;
+              }
+
+              table {
+                  width: 100%;
+                  border-collapse: collapse;
+              }
+
+              th, td {
+                  padding: 10px;
+                  text-align: left;
+              }
+
+              th {
+                  background-color: #007BFF;
+                  color: #fff;
+              }
+
+              tr:nth-child(even) {
+                  background-color: #f2f2f2;
+              }
+          </style>
+      </head>
+      <body>
+          <form action="ece" method="GET">
+              <h3>Student List</h3>
+              <table>
+                  <tr>
+                      <th>Student Name</th>
+                      <th>Register No</th>
+                      <th>Current Semester</th>
+                  </tr>
+                  <% theece.forEach((student) => { %>
+                      <% var name = JSON.stringify(student.name) %>
+                      <% var registerNo = JSON.stringify(student.registerNumber) %>
+                      <% var currentSem = JSON.stringify(student.CurrentSemNumber) %>
+                      <tr>
+                          <td><%= name %></td>
+                          <td><%= "Register No: " + registerNo %></td>
+                          <td><%= "Current Semester: " + currentSem %></td>
+                      </tr>
+                  <% }) %>
+              </table>
+          </form>
+      </body>
+      </html>

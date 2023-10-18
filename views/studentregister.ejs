@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <style>
+    body {
+      background-image: url('https://i.pinimg.com/736x/a5/ac/39/a5ac39208e194af13bd1987d65686d03.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+      padding-left: 250px;
+      color: white;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    table {
+      color: white;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+</head>
+<body>
+  <div class="container">
+    <form action="/studentregistr" method="GET">
+      <h3>STUDENT REGISTRATION FORM</h3>
+      <table align="center" cellpadding="10">
+        <tr>
+          <td><b>FIRST NAME</b></td>
+          <td><input type="text" name="First_Name" required minlength="4" maxlength="30" placeholder="(max 30 characters a-z and A-Z)" /></td>
+        </tr>
+        <tr>
+          <td><b>LAST NAME</b></td>
+          <td><input type="text" name="Last_Name" required minlength="1" maxlength="30" placeholder="(max 30 characters a-z and A-Z)" /></td>
+        </tr>
+        <tr>
+          <td><b>DATE OF BIRTH</b></td>
+          <td>
+            <select name="Birthday_day" id="Birthday_Day">
+              <!-- Options for days here -->
+            </select>
+            <select id="Birthday_Month" name="Birthday_Month">
+              <!-- Options for months here -->
+            </select>
+            <select name="Birthday_Year" id="Birthday_Year">
+              <!-- Options for years here -->
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><b>StudentRegId</b></td>
+          <td><input type="text" name="RegId" required minlength="10" maxlength="11" placeholder="(11 digit number)" /></td>
+        </tr>
+        <tr>
+          <td><b>EMAIL ID</b></td>
+          <td><input type="text" name="Email_Id" required minlength="4" maxlength="100" /></td>
+        </tr>
+        <tr>
+          <td><b>MOBILE NUMBER</b></td>
+          <td><input type="text" name="Mobile_Number" required minlength="10" maxlength="10" placeholder="(10 digit number)" /></td>
+        </tr>
+        <tr>
+          <td><b>GENDER</b></td>
+          <td>
+            Male <input type="radio" name="Gender" value="Male" />
+            Female <input type="radio" name="Gender" value="Female" />
+          </td>
+        </tr>
+        <tr>
+          <td><b>COURSES APPLIED FOR</b></td>
+          <td>
+            B.Tech <input type="radio" name="Course_Btech" value="BCA" />
+            B.Com <input type="radio" name="Course_BCom" value="B.Com" />
+            B.Sc <input type="radio" name="Course_BSc" value="B.Sc" />
+            B.A <input type="radio" name="Course_BA" value="B.A" />
+          </td>
+        </tr>
+        <tr>
+          <td><b>BRANCH NAME</b></td>
+          <td><input type="text" name="branch" required minlength="3" maxlength="5" placeholder="(CSE/ECE/CIVIL)" /></td>
+        </tr>
+        <tr>
+          <td><b>CURRENT SEM NUMBER</b></td>
+          <td><input type="text" name="Semno" required minlength="1" maxlength="1" placeholder="(number)" /></td>
+        </tr>
+        <tr>
+          <td><b>UPDATE status</b></td>
+          <td><input type="text" name="update" placeholder="type no" required minlength="2" maxlength="3" placeholder="(Since you're registering, please type 'no')" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <b><input type="submit" class="btn btn-primary" value="Submit"></b>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>

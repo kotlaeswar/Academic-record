@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://www.uwindsor.ca/education/sites/uwindsor.ca.education/files/styles/uwindsor_carousel/public/carousel-thank-you-teachers.jpg?itok=CnqkyQQk');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 8px;
+            width: 50%;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        label {
+            color: white;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        fieldset {
+            border-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <form action="postmark" method="GET">
+            <h1>POST STUDENT MARKS</h1>
+
+            <fieldset>
+                <legend>Student Details</legend>
+                <label>Student Name:
+                    <input type="text" name="stud_name">
+                </label>
+
+                <label>Register No:
+                    <input type="text" name="rol_no">
+                </label>
+
+                <label>Branch Name:
+                    <input type="text" name="branch">
+                </label>
+
+                <label>Current Semester Number:
+                    <input type="text" name="semnum">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Academic Details</legend>
+                <label>C.G.P.A:
+                    <input type="password" name="cgpa">
+                </label>
+
+                <label>Attendance:
+                    <input type="text" name="attendence">
+                </label>
+
+                <label>Remarks:
+                    <input type="text" name="remarks">
+                </label>
+            </fieldset>
+
+           </center> <button type="submit" class="btn btn-primary">POST</button></center>
+        </form>
+    </div>
+
+    <%- include('footer') -%>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+</html>
